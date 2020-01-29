@@ -1,2 +1,19 @@
-$darkModeBackground :#111111;
+$darkModeBackground:#363636;
+$darkModeBackgroundLogin :#1f1f1f;
 $darkModeText : #ffffff;
+
+#backgroundBody {
+    background-color: $darkModeBackground;
+}
+#backgroundContainer {
+    background-color: $darkModeBackgroundLogin;
+    border-radius: 2%;
+    margin-top: 50px;
+    color: $darkModeText;
+}
+#divLogin {
+    height: 500px;
+}
+#Tlogin {
+    padding-left: 25px;
+}

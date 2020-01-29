@@ -1,0 +1,19 @@
+#backgroundBody {
+  background-color: #363636;
+}
+
+#backgroundContainer {
+  background-color: #1f1f1f;
+  border-radius: 2%;
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+#divLogin {
+  height: 500px;
+}
+
+#Tlogin {
+  padding-left: 25px;
+}
+/*# sourceMappingURL=all.css.map */
