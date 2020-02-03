@@ -1,0 +1,69 @@
+$darkModeBackground:#ffffff;
+$darkModeBackgroundActive:#a1a1a1;
+$darkModeBackgroundLogin :#575757;
+$darkModeText : rgb(207, 207, 207);
+
+* {
+    transition: 1s;
+}
+
+#backgroundBody {
+    background-color: $darkModeBackground;
+}
+#backgroundContainer {
+    background-color: $darkModeBackgroundLogin;
+    border-radius: 2%;
+    margin-top: 50px;
+    color: $darkModeText;
+}
+#divLogin {
+    height: 500px;
+}
+#Tlogin {
+    padding-top: 25px;
+    color: $darkModeText;
+}
+#Login {
+    background-color: $darkModeBackgroundLogin;
+    border: none;
+    border-bottom: 2px solid $darkModeBackground;
+    color: $darkModeText;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 55px;
+    margin-top: 50px;
+}
+#Login:focus {
+    outline-color: $darkModeText;
+}
+#motDePasse {
+    background-color: $darkModeBackgroundLogin;
+    border: none;
+    border-bottom: 2px solid $darkModeBackground;
+    color: $darkModeText;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 55px;
+    margin-top: 25px;
+}
+#motDePasse:focus {
+    outline-color: $darkModeText;
+}
+#buttonLogin {
+    background-color: #444444;
+    border: $darkModeBackground;
+    color: $darkModeText;
+    padding: 10px 25px 10px 25px;
+    margin-top: 25px;
+}
+#buttonLogin:focus {
+    outline-color: $darkModeText;
+}
+#buttonLogin:active {
+    background-color: $darkModeBackgroundActive;
+    position: relative;
+}
+#pLogin {
+    font-size: 18px;
+    margin-top: 25px;
+}

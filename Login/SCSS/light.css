@@ -1,12 +1,17 @@
+* {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 #backgroundBody {
-  background-color: #363636;
+  background-color: #ffffff;
 }
 
 #backgroundContainer {
-  background-color: #1f1f1f;
+  background-color: #575757;
   border-radius: 2%;
   margin-top: 50px;
-  color: #8a8a8a;
+  color: #cfcfcf;
 }
 
 #divLogin {
@@ -15,14 +20,14 @@
 
 #Tlogin {
   padding-top: 25px;
-  color: #8a8a8a;
+  color: #cfcfcf;
 }
 
 #Login {
-  background-color: #1f1f1f;
+  background-color: #575757;
   border: none;
-  border-bottom: 2px solid #363636;
-  color: #8a8a8a;
+  border-bottom: 2px solid #ffffff;
+  color: #cfcfcf;
   margin-bottom: 10px;
   padding-left: 25px;
   padding-right: 55px;
@@ -30,14 +35,14 @@
 }
 
 #Login:focus {
-  outline-color: #8a8a8a;
+  outline-color: #cfcfcf;
 }
 
 #motDePasse {
-  background-color: #1f1f1f;
+  background-color: #575757;
   border: none;
-  border-bottom: 2px solid #363636;
-  color: #8a8a8a;
+  border-bottom: 2px solid #ffffff;
+  color: #cfcfcf;
   margin-bottom: 10px;
   padding-left: 25px;
   padding-right: 55px;
@@ -45,23 +50,23 @@
 }
 
 #motDePasse:focus {
-  outline-color: #8a8a8a;
+  outline-color: #cfcfcf;
 }
 
 #buttonLogin {
-  background-color: #363636;
-  border: #363636;
-  color: #8a8a8a;
+  background-color: #444444;
+  border: #ffffff;
+  color: #cfcfcf;
   padding: 10px 25px 10px 25px;
   margin-top: 25px;
 }
 
 #buttonLogin:focus {
-  outline-color: #8a8a8a;
+  outline-color: #cfcfcf;
 }
 
 #buttonLogin:active {
-  background-color: #464646;
+  background-color: #a1a1a1;
   position: relative;
 }
 
@@ -69,4 +74,4 @@
   font-size: 18px;
   margin-top: 25px;
 }
-/*# sourceMappingURL=all.css.map */
+/*# sourceMappingURL=light.css.map */
