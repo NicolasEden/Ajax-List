@@ -10,16 +10,25 @@
         <title>Login</title>
     </head>
     <body id="backgroundBody">
+        
         <div id="backgroundContainer" class="container">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                <label class="custom-control-label" for="customSwitch1">DarkMod</label>
+              </div>
             <div class="row">
                 <div id="divLogin" class="col-sm-8 offset-2">
                     <h1 id="Tlogin">Se Connecter</h1>
                     <div class="text-center">
-                        <input id="Login" class>
+                        <input class="text-center" id="Login" placeholder="Entrez Votre identifiant.">
                     </div>
                     <div class="text-center">
-                        <input id="motDePasse" class="text-center" type="password" placeholder="Entrez Votre Mot De Passe.">
+                        <input id="motDePasse" class="text-center" type="password" placeholder="Entrez Votre MDP.">
                     </div>
+                    <div class="text-center">
+                        <button id="buttonLogin" class="text-center" type="submit">Se Connecter</button>
+                    </div>
+                    <p id="pLogin">S'enrengistrer</p>
                 </div>
             </div>
         </div>
