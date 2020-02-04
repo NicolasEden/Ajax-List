@@ -9,10 +9,10 @@
         <link id="toto" rel="stylesheet" href="../Login/SCSS/light.css" type="text/css">
         <title>Login</title>
     </head>
-    <body onclick="darkmod()" id="backgroundBody">
+    <body id="backgroundBody">
         
         <div id="backgroundContainer" class="container">
-            <div class="custom-control custom-switch">
+            <div onclick="darkmod()" class="custom-control custom-switch">
                 <input type="checkbox" class="custom-control-input" id="customSwitch1">
                 <label class="custom-control-label" for="customSwitch1">DarkMod</label>
               </div>
@@ -28,7 +28,7 @@
                     <div class="text-center">
                         <button id="buttonLogin" class="text-center" type="submit">Se Connecter</button>
                     </div>
-                    <p onclick="enregistrer()" id="pLogin">S'enrengistrer</p>
+                    <a href="./enrengistrer.html" id="pLogin">S'enrengistrer</a>
                 </div>
             </div>
         </div>
