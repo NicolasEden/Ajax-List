@@ -1,6 +1,6 @@
 * {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #backgroundBody {
@@ -73,5 +73,6 @@
 #pLogin {
   font-size: 18px;
   margin-top: 25px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=light.css.map */

@@ -3,7 +3,7 @@ $darkModeBackgroundActive:#464646;
 $darkModeBackgroundLogin :#1f1f1f;
 $darkModeText : rgb(138, 138, 138);
 * {
-    transition: 1s;
+    transition: 0.5s;
 }
 #backgroundBody {
     background-color: $darkModeBackground;
@@ -64,4 +64,5 @@ $darkModeText : rgb(138, 138, 138);
 #pLogin {
     font-size: 18px;
     margin-top: 25px;
+    cursor: pointer;
 }

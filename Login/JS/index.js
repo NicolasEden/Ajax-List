@@ -24,5 +24,5 @@ document.getElementById('motDePasse').addEventListener('keyup', function(event) 
 
 
 function enregistrer() {
-    //fonction pour aller sur la page de s'enrengistrer
+    location.replace("enrengistrer.html");
 }
