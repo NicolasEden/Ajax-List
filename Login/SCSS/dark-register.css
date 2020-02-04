@@ -92,4 +92,11 @@ body {
   display: block;
   color: #F9F8F8;
 }
+
+#pMinimum {
+  color: #393D3F;
+  font-style: italic;
+  text-align: left;
+  margin-left: 75px;
+}
 /*# sourceMappingURL=dark-register.css.map */
