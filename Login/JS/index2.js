@@ -4,6 +4,10 @@ var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 var checkNb;
 var checkUC;
 var verif = 0;
+const progBar = document.getElementsByClassName('progress-bar progress-bar-striped progress-bar-animated')[0]
+const inputVerif = document.getElementById('motDePasseVerification');
+progBar.setAttribute('style', 'width: 1%')
+progBar.setAttribute('class', 'progress-bar progress-bar-striped progress-bar-animated bg-danger')
 document.getElementById('motDePasse').addEventListener('keyup', function(event) {
     var checkNb;
     var checkUC;
@@ -41,13 +45,35 @@ document.getElementById('motDePasse').addEventListener('keyup', function(event) 
         }
     }
     if (verif == 0) {
-
-    }
-    if (verif == 25) {
-
+        progBar.setAttribute('style', 'width: 1%')
+        progBar.setAttribute('class', 'progress-bar progress-bar-striped progress-bar-animated bg-danger')
+        progBar.innerHTML = ""
+    } else if (verif == 25) {
+        progBar.setAttribute('style', 'width: 25%')
+        progBar.setAttribute('class', 'progress-bar progress-bar-striped progress-bar-animated bg-danger')
+        progBar.innerHTML = "25%"
+    } else if (verif == 50) {
+        progBar.setAttribute('style', 'width: 50%')
+        progBar.setAttribute('class', 'progress-bar progress-bar-striped progress-bar-animated bg-danger')
+        progBar.innerHTML = "50%"
+    } else if (verif == 75) {
+        progBar.setAttribute('style', 'width: 75%')
+        progBar.setAttribute('class', 'progress-bar progress-bar-striped progress-bar-animated bg-warning')
+        progBar.innerHTML = "75%"
+    }  else if (verif == 100) {
+        progBar.setAttribute('style', 'width: 100%')
+        progBar.setAttribute('class', 'progress-bar progress-bar-striped progress-bar-animated bg-success')
+        progBar.innerHTML = "100%"
     }
 });
 
+document.getElementById('EnvoyerRegister').addEventListener('click', function(event) {
+    if (inputVerif.value == mdp) {
+        console.log('lol');
+    } else {
+        console.log('qsdqsd');
+    }
+});
 
 function enregistrer() {
     location.replace("enrengistrer.html");
