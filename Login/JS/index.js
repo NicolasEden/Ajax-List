@@ -46,3 +46,22 @@ document.getElementById('motDePasse').addEventListener('keyup', function(event) 
 function enregistrer() {
     location.replace("enrengistrer.html");
 }
+
+
+function seConnecter() {
+    var login = document.getElementById("Login").value
+    var passeword = document.getElementById("motDePasse").value
+    $.ajax({
+        url: "http://92.222.69.104/todo/listes",
+        headers: { 'login': login, 'password': passeword},
+        type: 'GET',
+        dataType: 'json',
+        async: false,
+        success : function(data) {
+            result = data;
+            location.replace("list.html?login="+login+"&password="+passeword);
+        }, error : function(req, err) {
+            alert: ("Request:"+ JSON.stringify(req));
+         }
+    });
+}
