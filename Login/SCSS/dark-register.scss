@@ -1,0 +1,78 @@
+$backgroundColor : #282828;
+$colorPolice : #F9F8F8;
+$colorBorder : #393D3F;
+$white : #141414;
+$backgroundButton : #393D3F;
+
+body {
+    background-color: $white;
+}
+#contenue {
+    margin-top: 50px;
+    background-color: $backgroundColor;
+    height: 650px;
+    border-radius: 3%;
+}
+#TRegister {
+    padding-left: 25px;
+    padding-top: 50px;
+    color: $colorPolice;
+}
+#Login {
+    background-color: $backgroundColor;
+    border: none;
+    border-bottom: 2px solid $colorBorder;
+    color: $colorPolice;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 55px;
+    margin-top: 50px;
+    width: 75%;
+}
+#Login:focus {
+    outline-color: $colorBorder;
+}
+#motDePasse {
+    background-color: $backgroundColor;
+    border: none;
+    border-bottom: 2px solid $colorBorder;
+    color: $colorPolice;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 55px;
+    margin-top: 50px;
+    width: 75%;
+}
+#motDePasse:focus {
+    outline-color: $colorBorder;
+}
+#motDePasseVerification {
+    background-color: $backgroundColor;
+    border: none;
+    border-bottom: 2px solid $colorBorder;
+    color: $colorPolice;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 55px;
+    margin-top: 50px;
+    width: 75%;
+}
+#motDePasseVerification:focus {
+    outline-color: $colorBorder;
+}
+#EnvoyerRegister {
+    background-color: #444444;
+    border: $backgroundButton;
+    color: $backgroundColor;
+    padding: 10px 25px 10px 25px;
+    margin-top: 25px;
+}
+#EnvoyerRegister:focus {
+    outline-color: $colorBorder;
+}
+#EnvoyerRegister:active {
+    background-color: $backgroundColor;
+    color: $colorPolice;
+    border: $colorPolice;
+    position: relative;
+}
