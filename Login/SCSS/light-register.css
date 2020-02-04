@@ -1,0 +1,84 @@
+body {
+  background-color: #ffffff;
+}
+
+#contenue {
+  margin-top: 50px;
+  background-color: #EDEDF4;
+  height: 650px;
+  border-radius: 3%;
+}
+
+#TRegister {
+  padding-left: 25px;
+  padding-top: 50px;
+  color: #282828;
+}
+
+#Login {
+  background-color: #EDEDF4;
+  border: none;
+  border-bottom: 2px solid #C6C5B9;
+  color: #282828;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 55px;
+  margin-top: 50px;
+  width: 75%;
+}
+
+#Login:focus {
+  outline-color: #C6C5B9;
+}
+
+#motDePasse {
+  background-color: #EDEDF4;
+  border: none;
+  border-bottom: 2px solid #C6C5B9;
+  color: #282828;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 55px;
+  margin-top: 50px;
+  width: 75%;
+}
+
+#motDePasse:focus {
+  outline-color: #C6C5B9;
+}
+
+#motDePasseVerification {
+  background-color: #EDEDF4;
+  border: none;
+  border-bottom: 2px solid #C6C5B9;
+  color: #282828;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 55px;
+  margin-top: 50px;
+  width: 75%;
+}
+
+#motDePasseVerification:focus {
+  outline-color: #C6C5B9;
+}
+
+#EnvoyerRegister {
+  background-color: #444444;
+  border: #393D3F;
+  color: #EDEDF4;
+  padding: 10px 25px 10px 25px;
+  margin-top: 25px;
+}
+
+#EnvoyerRegister:focus {
+  outline-color: #C6C5B9;
+}
+
+#EnvoyerRegister:active {
+  background-color: #EDEDF4;
+  color: #282828;
+  border: #282828;
+  position: relative;
+}
+/*# sourceMappingURL=light-register.css.map */
