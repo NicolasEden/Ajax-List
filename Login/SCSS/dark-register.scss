@@ -4,6 +4,9 @@ $colorBorder : #393D3F;
 $white : #141414;
 $backgroundButton : #393D3F;
 
+*{
+    transition: 0.5s;
+}
 body {
     background-color: $white;
 }
@@ -75,4 +78,9 @@ body {
     color: $colorPolice;
     border: $colorPolice;
     position: relative;
+}
+#pLogin {
+    margin-top: 50px;
+    display: block;
+    color: $colorPolice;
 }

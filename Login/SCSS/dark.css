@@ -4,14 +4,14 @@
 }
 
 #backgroundBody {
-  background-color: #363636;
+  background-color: #141414;
 }
 
 #backgroundContainer {
-  background-color: #1f1f1f;
+  background-color: #282828;
   border-radius: 2%;
   margin-top: 50px;
-  color: #8a8a8a;
+  color: #F9F8F8;
 }
 
 #divLogin {
@@ -20,14 +20,14 @@
 
 #Tlogin {
   padding-top: 25px;
-  color: #8a8a8a;
+  color: #F9F8F8;
 }
 
 #Login {
-  background-color: #1f1f1f;
+  background-color: #282828;
   border: none;
-  border-bottom: 2px solid #363636;
-  color: #8a8a8a;
+  border-bottom: 2px solid #393D3F;
+  color: #F9F8F8;
   margin-bottom: 10px;
   padding-left: 25px;
   padding-right: 55px;
@@ -35,14 +35,14 @@
 }
 
 #Login:focus {
-  outline-color: #8a8a8a;
+  outline-color: #393D3F;
 }
 
 #motDePasse {
-  background-color: #1f1f1f;
+  background-color: #282828;
   border: none;
-  border-bottom: 2px solid #363636;
-  color: #8a8a8a;
+  border-bottom: 2px solid #393D3F;
+  color: #F9F8F8;
   margin-bottom: 10px;
   padding-left: 25px;
   padding-right: 55px;
@@ -50,29 +50,29 @@
 }
 
 #motDePasse:focus {
-  outline-color: #8a8a8a;
+  outline-color: #393D3F;
 }
 
 #buttonLogin {
-  background-color: #363636;
-  border: #363636;
-  color: #8a8a8a;
+  background-color: #282828;
+  border: #393D3F;
+  color: #F9F8F8;
   padding: 10px 25px 10px 25px;
   margin-top: 25px;
 }
 
 #buttonLogin:focus {
-  outline-color: #8a8a8a;
+  outline-color: #393D3F;
 }
 
 #buttonLogin:active {
-  background-color: #464646;
+  background-color: #282828;
   position: relative;
 }
 
 #pLogin {
-  font-size: 18px;
-  margin-top: 25px;
-  cursor: pointer;
+  margin-top: 50px;
+  display: block;
+  color: #F9F8F8;
 }
 /*# sourceMappingURL=dark.css.map */

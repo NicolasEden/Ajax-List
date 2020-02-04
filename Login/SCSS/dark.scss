@@ -1,68 +1,70 @@
-$darkModeBackground:#363636;
-$darkModeBackgroundActive:#464646;
-$darkModeBackgroundLogin :#1f1f1f;
-$darkModeText : rgb(138, 138, 138);
+$backgroundColor : #282828;
+$colorPolice : #F9F8F8;
+$colorBorder : #393D3F;
+$white : #141414;
+$backgroundButton : #393D3F;
+
 * {
     transition: 0.5s;
 }
 #backgroundBody {
-    background-color: $darkModeBackground;
+    background-color: $white;
 }
 #backgroundContainer {
-    background-color: $darkModeBackgroundLogin;
+    background-color: $backgroundColor;
     border-radius: 2%;
     margin-top: 50px;
-    color: $darkModeText;
+    color: $colorPolice;
 }
 #divLogin {
     height: 500px;
 }
 #Tlogin {
     padding-top: 25px;
-    color: $darkModeText;
+    color: $colorPolice;
 }
 #Login {
-    background-color: $darkModeBackgroundLogin;
+    background-color: $backgroundColor;
     border: none;
-    border-bottom: 2px solid $darkModeBackground;
-    color: $darkModeText;
+    border-bottom: 2px solid $colorBorder;
+    color: $colorPolice;
     margin-bottom: 10px;
     padding-left: 25px;
     padding-right: 55px;
     margin-top: 50px;
 }
 #Login:focus {
-    outline-color: $darkModeText;
+    outline-color: $colorBorder;
 }
 #motDePasse {
-    background-color: $darkModeBackgroundLogin;
+    background-color: $backgroundColor;
     border: none;
-    border-bottom: 2px solid $darkModeBackground;
-    color: $darkModeText;
+    border-bottom: 2px solid $colorBorder;
+    color: $colorPolice;
     margin-bottom: 10px;
     padding-left: 25px;
     padding-right: 55px;
     margin-top: 25px;
 }
 #motDePasse:focus {
-    outline-color: $darkModeText;
+    outline-color: $colorBorder;
 }
 #buttonLogin {
-    background-color: $darkModeBackground;
-    border: $darkModeBackground;
-    color: $darkModeText;
+    background-color: $backgroundColor;
+    border: $colorBorder;
+    color: $colorPolice;
     padding: 10px 25px 10px 25px;
     margin-top: 25px;
 }
 #buttonLogin:focus {
-    outline-color: $darkModeText;
+    outline-color: $colorBorder;
 }
 #buttonLogin:active {
-    background-color: $darkModeBackgroundActive;
+    background-color: $backgroundColor;
     position: relative;
 }
 #pLogin {
-    font-size: 18px;
-    margin-top: 25px;
-    cursor: pointer;
+    margin-top: 50px;
+    display: block;
+    color: $colorPolice;
 }
