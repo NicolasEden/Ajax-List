@@ -1,0 +1,128 @@
+$backgroundColor : #282828;
+$colorPolice : #F9F8F8;
+$colorBorder : #393D3F;
+$white : #141414;
+$backgroundButton : #393D3F;
+$backgroundButton : #393D3F;
+$colorBorder2 : rgb(170, 170, 170);
+$backgroundButton : rgb(65, 65, 65);
+
+* {
+    transition: 0.4s;
+}
+
+#body {
+    background-color: $white;
+}
+#creerList {
+    background-color: $backgroundColor;
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    border-radius: 3% 3% 0 0;
+}
+#bandeauBottom {
+    background-color: $colorBorder2;
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 3% 3%;
+    margin-bottom: 200px;
+}
+#plus {
+    color: $colorPolice;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 50px;
+}
+#bandeauFooter {
+    position: fixed;
+    background-color: $colorBorder;
+    bottom: 0px;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+#soummettre {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: $backgroundButton;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    border-color: $colorBorder;
+    box-shadow: none;
+    color: $colorPolice;
+}
+.bandeau-bottom {
+    background-color: $colorBorder2;
+    width: 100%;
+    height: 50px;
+    border-radius: 0 0 10px 10px;
+    color: $colorPolice;
+    text-align: center;
+}
+.creer-list {
+    background-color: $backgroundColor;
+    margin-top: 50px;
+    width: 100%;
+    min-height: 500px;
+    border-radius: 3% 3% 0 0;
+}
+.bandeau-poubelle {
+    height: 50px;
+    background-color: $colorBorder2;
+    border-bottom: 2px solid rgb(198, 197, 185);
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+}
+.fa-trash {
+    padding-top: 10px;
+}
+.titre-liste {
+    padding-top: 10px;
+    color: $colorPolice;
+    font-weight: bold;
+}
+#focus {
+    background-color: $colorBorder2;
+    border: none;
+    border-bottom: 2px solid $colorBorder;
+    color: $colorPolice;    
+    padding-left: 25px;
+    padding-right: 55px;
+    width: 75%;
+    margin-top: 10px;
+    text-align: center;
+}
+#focus:focus {
+    outline-color: $colorBorder;
+}
+.newPLus {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding-top: 20px;
+    color: $colorPolice;
+}
+.contenerTitle {
+    display: flex;
+    justify-content: center;
+    color: $colorPolice;
+}
+.TitleR{
+    padding-top: 10px;
+    color: $colorPolice;
+}
+.newDoc {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    color: $colorPolice;
+}
+#pDarkMod {
+    color: $colorPolice;
+}

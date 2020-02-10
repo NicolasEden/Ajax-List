@@ -1,10 +1,10 @@
 function darkmod() {
     
     if (document.getElementById("customSwitch1").checked) {
-        document.getElementById("toto").setAttribute("href","../Login/SCSS/dark-register.css")
+        document.getElementById("toto").setAttribute("href","../Login/SCSS/list-black.css")
         document.cookie = ", theme=dark"
     }else {
-        document.getElementById("toto").setAttribute("href","../Login/SCSS/light-register.css")
+        document.getElementById("toto").setAttribute("href","../Login/SCSS/list.css")
         document.cookie = ", theme=light"
     }
 }
@@ -20,9 +20,9 @@ if (!cookie.theme) {
     document.cookie = ", theme=light"
 }
 if (cookie.theme == "dark") {
-    document.getElementById("toto").setAttribute("href","../Login/SCSS/light-register.css")
+    document.getElementById("toto").setAttribute("href","../Login/SCSS/list-black.css")
     document.getElementById("customSwitch1").checked = true;
 } else {
-    document.getElementById("toto").setAttribute("href","../Login/SCSS/dark-register.css")
+    document.getElementById("toto").setAttribute("href","../Login/SCSS/list.css")
     document.getElementById("customSwitch1").checked = false;
 }

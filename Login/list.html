@@ -11,11 +11,30 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="https://kit.fontawesome.com/51def7400e.js" crossorigin="anonymous"></script>
-    <link id="toto" rel="stylesheet" href="../Login/SCSS/light.css" type="text/css">
+    <link id="toto" rel="stylesheet" href="../Login/SCSS/list-black.css" type="text/css">
     <title>Listes</title>
 </head>
-<body>
-    
-    <script src="./JS/index3.js"></script>
+<body id="body">
+    <div onclick="darkmod()" class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label id="pDarkMod" class="custom-control-label" for="customSwitch1">DarkMod</label>
+    </div>
+    <div class="container-fluid">
+        <div id="body" class="row">
+            <div id="woinWoin" class="col-sm-3">
+                <div onclick="creerNewList()" id="creerList">
+                    <p id="plus"><i class="fas fa-plus"></i></p>
+                </div>
+                <div id="bandeauBottom">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bandeauFooter">
+        <button type="button" class="btn btn-light" id="soummettre">Soumettre les modifications</button>
+    </div>
+    <script src="./JS/list.js"></script>
+    <script src="./JS/darkmodList.js"></script>
 </body>
 </html>

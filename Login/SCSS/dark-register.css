@@ -3,7 +3,7 @@
   transition: 0.5s;
 }
 
-body {
+#backgroundBody {
   background-color: #141414;
 }
 
@@ -71,7 +71,7 @@ body {
 #EnvoyerRegister {
   background-color: #444444;
   border: #393D3F;
-  color: #282828;
+  color: #F9F8F8;
   padding: 10px 25px 10px 25px;
   margin-top: 25px;
 }

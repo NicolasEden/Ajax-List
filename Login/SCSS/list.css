@@ -1,0 +1,156 @@
+* {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#creerList {
+  background-color: #EDEDF4;
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  border-radius: 3% 3% 0 0;
+}
+
+#bandeauBottom {
+  background-color: #aaaaaa;
+  width: 100%;
+  height: 50px;
+  border-radius: 0 0 3% 3%;
+  margin-bottom: 200px;
+}
+
+#plus {
+  color: #282828;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 50px;
+}
+
+#bandeauFooter {
+  position: fixed;
+  background-color: #C6C5B9;
+  bottom: 0px;
+  margin-left: 10%;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+#soummettre {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #414141;
+  padding: 10px 25px 10px 25px;
+  border-radius: 15px;
+  border-color: #C6C5B9;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #ffffff;
+}
+
+.bandeau-bottom {
+  background-color: #aaaaaa;
+  width: 100%;
+  height: 50px;
+  border-radius: 0 0 10px 10px;
+  color: #282828;
+  text-align: center;
+}
+
+.creer-list {
+  background-color: #EDEDF4;
+  margin-top: 50px;
+  width: 100%;
+  min-height: 500px;
+  border-radius: 3% 3% 0 0;
+}
+
+.bandeau-poubelle {
+  height: 50px;
+  background-color: #aaaaaa;
+  border-bottom: 2px solid #c6c5b9;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.fa-trash {
+  padding-top: 10px;
+}
+
+.titre-liste {
+  padding-top: 10px;
+  color: #282828;
+  font-weight: bold;
+}
+
+#focus {
+  background-color: #aaaaaa;
+  border: none;
+  border-bottom: 2px solid #C6C5B9;
+  color: #282828;
+  padding-left: 25px;
+  padding-right: 55px;
+  width: 75%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#focus:focus {
+  outline-color: #C6C5B9;
+}
+
+.newPLus {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  padding-top: 20px;
+  color: #282828;
+}
+
+.contenerTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #282828;
+}
+
+.TitleR {
+  padding-top: 10px;
+  color: #282828;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.newDoc {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  color: #282828;
+}
+
+#pDarkMod {
+  color: #282828;
+}
+/*# sourceMappingURL=list.css.map */
