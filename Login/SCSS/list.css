@@ -148,9 +148,16 @@
   padding-bottom: 10px;
   padding-left: 15px;
   color: #282828;
+  display: inline-block;
 }
 
 #pDarkMod {
   color: #282828;
+}
+
+.petite-poubelle {
+  display: block;
+  padding-left: 50%;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=list.css.map */

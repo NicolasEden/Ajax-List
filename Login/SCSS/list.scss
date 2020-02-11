@@ -131,7 +131,13 @@ $backgroundButton : rgb(65, 65, 65);
     padding-bottom: 10px;
     padding-left: 15px;
     color: $colorPolice;
+    display: inline-block;
 }
 #pDarkMod {
     color: $colorPolice;
+}
+.petite-poubelle {
+    display: block;
+    padding-left: 50%;
+    padding-bottom: 10px;
 }

@@ -1,18 +1,4 @@
 var result;
-var oParametre = searchToObject();
-function searchToObject() {
-    var pairs = window.location.search.substring(1).split("&"),
-        obj = {},
-        pair,
-        i;
-    for ( i in pairs ) {
-        if ( pairs[i] === "" ) continue;
-  
-        pair = pairs[i].split("=");
-        obj[ decodeURIComponent( pair[0] ) ] = decodeURIComponent( pair[1] );
-    }
-    return obj;
-}
 var text = document.cookie,
     pattern = new RegExp(/\b([^=,]+)=([^=,]+)\b/g),
     obj = {};
@@ -20,6 +6,8 @@ var text = document.cookie,
 while (match = pattern.exec(text)) obj[match[1]] = match[2];
 
 var cookie = obj;
+console.log(cookie)
+console.log(document.cookie)
 $.ajax({
     url: "http://92.222.69.104/todo/listes",
     headers: { 'login': cookie.login, 'password': cookie.password},
@@ -111,10 +99,19 @@ function creerNewList(title, content) {
     for (let a = 0; a < document.getElementsByClassName('TitleR').length; a++) {
         document.getElementsByClassName('TitleR')[a].addEventListener('dblclick', function(event) {
             event.target.parentNode.removeChild(event.target)
-            addList(event)
+            addList2(event)
         })
         
     }
+}
+var event;
+function addList2(event) {
+    event = event.target
+    var input = document.createElement("INPUT")
+    /*event.target.before(input)
+    input.setAttribute("id","focus")
+    input.setAttribute("onkeydown","valider2(event)")
+    focus();*/
 }
 
 function addList(event) {
@@ -130,7 +127,7 @@ function valider2(event) {
         var divDoc = document.createElement('div')
         var parent = event.target.parentElement
         var newDoc = document.createElement('P')
-        
+
         divDoc.setAttribute('class', 'divDoc')
         divDoc.style.borderBottom = "2px solid #C6C5B9"
         newDoc.innerHTML = "<b>"+saisie+"</b>";
@@ -139,6 +136,10 @@ function valider2(event) {
         parent.before(divDoc)
         var focus = document.getElementById("focus")
         focus.parentNode.removeChild(focus)
+        
+        var poubelle2 = document.createElement("i")
+        divDoc.appendChild(poubelle2)
+        poubelle2.setAttribute("class","far fa-trash-alt petite-poubelle")
     }
 }
 
@@ -175,9 +176,8 @@ function envoyerElement() {
     enter = {"utilisateur" : cookie.login, "password": cookie.password, "todoListes": []}
     for (let checkList = 0; checkList < document.getElementsByClassName('col-sm-3').length ; checkList++) {
         if (document.getElementsByClassName('col-sm-3')[checkList] != undefined && document.getElementsByClassName('col-sm-3')[checkList].children.length == 3) {
-            console.log(document.getElementsByClassName('col-sm-3')[checkList].children[2].children[0].textContent)
             enter.todoListes.push({'name':document.getElementsByClassName('col-sm-3')[checkList].children[2].children[0].textContent, "elements": []})
-            for (let checkInfos = 0; checkInfos < document.getElementsByClassName('col-sm-3')[checkList].children.length; checkInfos++) {
+            for (let checkInfos = 0; checkInfos < document.getElementsByClassName('col-sm-3')[checkList].children[0].children.length; checkInfos++) {
                 if (document.getElementsByClassName('col-sm-3')[checkList].children[0].children[checkInfos]) {
                     if (document.getElementsByClassName('col-sm-3')[checkList].children[0].children[checkInfos].children[0].tagName == "P") {
                         enter.todoListes[checkList].elements.push(document.getElementsByClassName('col-sm-3')[checkList].children[0].children[checkInfos].textContent)
@@ -196,3 +196,14 @@ function envoyerElement() {
         console.log(data);
         });
     }
+
+window.addEventListener('unload', function(event) {
+    this.alert('sdqsd')
+    alert('sdqsd')
+    envoyerElement()
+})
+window.addEventListener('beforeunload', function(event) {
+    this.alert('sdqsd')
+    alert('sdqsd')
+    envoyerElement()
+})
