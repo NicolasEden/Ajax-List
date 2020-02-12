@@ -149,6 +149,7 @@
   padding-left: 15px;
   color: #282828;
   display: inline-block;
+  text-align: center;
 }
 
 #pDarkMod {
@@ -159,5 +160,16 @@
   display: block;
   padding-left: 50%;
   padding-bottom: 10px;
+}
+
+#focus {
+  background-color: transparent;
+  outline: none;
+  border-bottom: none;
+}
+
+#focus:focus {
+  background-color: transparent;
+  outline: none;
 }
 /*# sourceMappingURL=list.css.map */

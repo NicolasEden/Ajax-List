@@ -41,6 +41,12 @@ function creerNewList(title, content) {
             newDoc.innerHTML = "<b>"+content[a]+"</b>";
             divDoc.appendChild(newDoc)
             div1.appendChild(divDoc)
+            var poubelle2 = document.createElement("i")
+            divDoc.appendChild(poubelle2)
+            poubelle2.setAttribute("class","far fa-trash-alt petite-poubelle")
+            poubelle2.addEventListener('click', function(event) {
+                event.target.parentElement.parentNode.removeChild(event.target.parentElement)
+            })
         }
         var div3 = document.createElement("DIV")
         div.appendChild(div3)
@@ -93,25 +99,25 @@ function creerNewList(title, content) {
         var input = document.createElement("INPUT")
         div2.appendChild(input)
         input.setAttribute("id","focus")
-        input.setAttribute("onkeydown","valider(event)")
+        input.setAttribute("onkeydown","valider(event)") 
         focus();
     }
     for (let a = 0; a < document.getElementsByClassName('TitleR').length; a++) {
         document.getElementsByClassName('TitleR')[a].addEventListener('dblclick', function(event) {
-            event.target.parentNode.removeChild(event.target)
+            random2 = event
             addList2(event)
+            event.target.parentElement.parentNode.removeChild(event.target.parentElement)
         })
         
     }
 }
-var event;
+var random2;
 function addList2(event) {
-    event = event.target
     var input = document.createElement("INPUT")
-    /*event.target.before(input)
+    event.target.parentElement.parentElement.appendChild(input)
     input.setAttribute("id","focus")
-    input.setAttribute("onkeydown","valider2(event)")
-    focus();*/
+    input.setAttribute("onkeydown","valider3(event)")
+    focus();
 }
 
 function addList(event) {
@@ -121,6 +127,29 @@ function addList(event) {
     input.setAttribute("onkeydown","valider2(event)")
     focus();
 }
+
+function valider3(event){
+    if (event.keyCode == 13){
+        var saisie = document.getElementById("focus").value
+        var Titre = document.createElement("P")
+        var TitreB = document.createElement("B")
+        event.target.parentElement.appendChild(Titre)
+        TitreB.innerHTML = saisie;
+        Titre.appendChild(TitreB); 
+        var focus = document.getElementById("focus")
+        focus.parentNode.removeChild(focus)
+        Titre.setAttribute("class","titre-liste noselect")
+        Titre.addEventListener('dblclick', function(event) {
+            random2 = event
+            addList2(event)
+            event.target.parentElement.parentNode.removeChild(event.target.parentElement)
+        })
+        if (saveauto == true) {
+            envoyerElement()
+        }
+    }
+}
+
 function valider2(event) {
     if (event.keyCode == 13) {
         var saisie = document.getElementById("focus").value
@@ -140,6 +169,12 @@ function valider2(event) {
         var poubelle2 = document.createElement("i")
         divDoc.appendChild(poubelle2)
         poubelle2.setAttribute("class","far fa-trash-alt petite-poubelle")
+        poubelle2.addEventListener('click', function(event) {
+            event.target.parentElement.parentNode.removeChild(event.target.parentElement)
+        })
+        if (saveauto == true) {
+            envoyerElement()
+        }
     }
 }
 
@@ -153,11 +188,21 @@ function valider() {
         var saisie = document.getElementById("focus").value
         var parent = event.target.parentElement
         var Titre = document.createElement("P")
+        var TitreB = document.createElement("B")
         parent.appendChild(Titre)
-        Titre.innerHTML = saisie
+        TitreB.innerHTML = saisie
+        Titre.appendChild(TitreB); 
         var focus = document.getElementById("focus")
         focus.parentNode.removeChild(focus)
-        Titre.setAttribute("class","titre-liste")
+        Titre.setAttribute("class","titre-liste noselect")
+        Titre.addEventListener('dblclick', function(event) {
+            random2 = event
+            addList2(event)
+            event.target.parentElement.parentNode.removeChild(event.target.parentElement)
+        })
+        if (saveauto == true) {
+            envoyerElement()
+        }
     }
 }
 
@@ -207,3 +252,14 @@ window.addEventListener('beforeunload', function(event) {
     alert('sdqsd')
     envoyerElement()
 })
+var saveauto;
+function autosave() {
+    if (!saveauto) {
+        saveauto = false;
+    }
+    if (saveato == false) {
+        document.getElementById("customSwitch2").checked = false;
+    } else if (saveauto == true) {
+        document.getElementById("customSwitch2").checked = true;
+    }
+}

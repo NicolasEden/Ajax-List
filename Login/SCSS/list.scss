@@ -132,6 +132,7 @@ $backgroundButton : rgb(65, 65, 65);
     padding-left: 15px;
     color: $colorPolice;
     display: inline-block;
+    text-align: center;
 }
 #pDarkMod {
     color: $colorPolice;
@@ -140,4 +141,13 @@ $backgroundButton : rgb(65, 65, 65);
     display: block;
     padding-left: 50%;
     padding-bottom: 10px;
+}
+#focus{
+    background-color: transparent;
+    outline: none;
+    border-bottom: none;
+}
+#focus:focus{
+    background-color: transparent;
+    outline: none;
 }
